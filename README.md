@@ -92,7 +92,7 @@ python examples/load_sets.py
 ### Option 1: Load sets from Excel
 
 ```
-from ivenn.core.api import IVenn
+from ivenn import IVenn
 
 v = IVenn.from_excel("my_sets.xlsx")
 v.draw()
