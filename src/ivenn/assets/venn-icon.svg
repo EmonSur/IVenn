@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128" role="img" aria-label="Venn Diagram Icon">
+  <defs>
+    <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f77b4" />
+      <stop offset="100%" stop-color="#4fa3ff" />
+    </linearGradient>
+    <linearGradient id="gB" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff7f0e" />
+      <stop offset="100%" stop-color="#ffb366" />
+    </linearGradient>
+    <linearGradient id="gC" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2ca02c" />
+      <stop offset="100%" stop-color="#65d965" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" ry="24" fill="#0f2747" />
+  <g fill-opacity="0.70" stroke="#ffffff" stroke-width="3">
+    <circle cx="52" cy="56" r="32" fill="url(#gA)" />
+    <circle cx="76" cy="56" r="32" fill="url(#gB)" />
+    <circle cx="64" cy="76" r="32" fill="url(#gC)" />
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ivenn"
+version = "0.1.0"
+description = "InteractiVenn-style set exploration in Python"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Emon Monsur" }
+]
+dependencies = [
+  "lxml",
+  "pandas",
+  "PySide6",
+  "openpyxl",
+  "pytest"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+[tool.pytest.ini_options]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ivenn = [
+  "diagrams/*/*.svg",
+  "assets/*.ico",
+]
