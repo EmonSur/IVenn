@@ -1,6 +1,6 @@
 # IVenn
 
-IVenn is a Python API for exploring overlaps between up to 6 sets using InteractiVenn-style diagrams. It can load sets from Python or from an Excel file, display them in a viewer, step through union views, inspect regions and sets, and export results as SVG, PNG, or Excel files.
+IVenn is a Python API for exploring overlaps between up to 6 sets using [InteractiVenn](https://www.interactivenn.net/)-style diagrams. It can load sets from Python or from an Excel file, display them in a viewer, step through union views, inspect regions and sets, and export results as SVG, PNG, or Excel files.
 
 ---
 
