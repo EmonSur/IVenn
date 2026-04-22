@@ -70,12 +70,6 @@ source .venv/bin/activate
 ### 3. Install dependencies
 
 ```
-pip install -r requirements.txt
-```
-
-or
-
-```
 pip install .
 ```
 
@@ -182,10 +176,4 @@ If imports fail, reinstall:
 
 ```
 pip install .
-```
-
-If dependencies are missing:
-
-```
-pip install -r requirements.txt
 ```

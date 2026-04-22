@@ -547,8 +547,16 @@ class Viewer(QWidget):
                     match_n = re.search(r"(\d)waydiagram", os.path.basename(self.current_svg_path).lower())
                     n_way = int(match_n.group(1)) if match_n else 0
 
+                standalone_letters = set("ABCDEF")
+                if self.controller and hasattr(self.controller, "union_states"):
+                    current_unions = self.controller.union_states[self.controller.current_index]
+                    grouped_letters = set()
+                    for union in current_unions:
+                        grouped_letters |= {char.upper() for char in union}
+                    standalone_letters -= grouped_letters
+
                 if n_way == 6:
-                    stroke_width = 3.5 / 5 if letter in {"A", "B", "C"} else (3.5 * 2) / 3
+                    stroke_width = 3.5 / 5 if letter in {"A", "B", "C"} and letter in standalone_letters else (3.5 * 2) / 3
                 else:
                     stroke_width = (3.5 * 2) / 3
 

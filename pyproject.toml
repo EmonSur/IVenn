@@ -23,7 +23,6 @@ dependencies = [
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
-[tool.pytest.ini_options]
 where = ["src"]
 
 [tool.setuptools.package-data]
@@ -31,3 +30,7 @@ ivenn = [
   "diagrams/*/*.svg",
   "assets/*.ico",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

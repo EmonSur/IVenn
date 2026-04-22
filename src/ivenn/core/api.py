@@ -713,8 +713,6 @@ class IVenn:
         if len(stack) != 1 or not isinstance(stack[0], set):
             raise ValueError("Invalid tree union structure.")
 
-        root_group = stack[0]
-
         groups_by_depth: dict[int, list[set[str]]] = {}
         for depth, group in groups_with_depth:
             groups_by_depth.setdefault(depth, []).append(group)
@@ -736,7 +734,7 @@ class IVenn:
             if unions != self.union_states[-1]:
                 self.union_states.append(unions)
 
-        final_union = [set(root_group)]
+        final_union = [set(self.sets.keys())]
         if final_union != self.union_states[-1]:
             self.union_states.append(final_union)
 

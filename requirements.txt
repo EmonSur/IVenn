@@ -1,5 +1,0 @@
-lxml,
-pandas,
-PySide6,
-openpyxl,
-pytest
